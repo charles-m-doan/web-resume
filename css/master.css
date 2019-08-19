@@ -1,0 +1,17 @@
+/* Remove all inherent styling to begin from scratch. */
+@import url("./base/reset.css");
+
+/* Define color palette. */
+@import url("./base/color-palette.css");
+
+/* Set standard global config for a few properties such as fonts, sizing, and overflow behavior. */
+@import url("./base/general.css");
+
+/* Style the base page layout that will be used across all pages. */
+@import url("./base/layout.css");
+
+.header {
+	width: 100%;
+	min-height: 5vh;
+	background-color: var(--primary-1);
+}

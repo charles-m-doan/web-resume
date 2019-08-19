@@ -1,0 +1,30 @@
+/* PRIMARY CONTENT LAYOUT */
+/* The below is for layout and styling of the main content areas, but not the specific content itself. 
+Main content areas include the page-wrapper, header/nav, main, and footer. */
+
+:root {
+	--a4-width: 8.5in;
+	--a4-height: 11in;
+}
+
+.wrapper {
+	/* Never allow the wrapper to grow larger than the viewport */
+	width: 100vw;
+	/* Force wrapper to take up at least as much vertical space as the viewport height*/
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	/* wrapper should render behind all other elements */
+	z-index: -1000;
+
+	background-color: var(--neutral-3);
+}
+
+.sheet {
+	background-color: var(--high);
+	width: var(--a4-width);
+	height: var(--a4-height);
+	padding: 0.1in 0.2in 0.6in 0.2in;
+}
